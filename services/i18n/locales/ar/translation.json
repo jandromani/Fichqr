@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "نظام تسجيل الدوام",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "name": "الاسم الكامل",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "quickAccess": "وصول سريع",
+    "admin": "المدير",
+    "employer": "صاحب العمل",
+    "worker": "العامل"
+  },
+  "navigation": {
+    "workers": "العمال",
+    "positions": "المواقع",
+    "calendar": "التقويم",
+    "reports": "التقارير",
+    "vacations": "الإجازات",
+    "qrCodes": "رموز QR",
+    "config": "الإعدادات"
+  },
+  "languages": {
+    "es": "الإسبانية",
+    "en": "الإنجليزية",
+    "hi": "الهندية",
+    "ur": "الأردية",
+    "ar": "العربية",
+    "sw": "السواحيلية",
+    "ha": "الهوسا"
+  },
+  "dateFormats": {
+    "short": "DD/MM/YYYY",
+    "long": "D MMMM YYYY",
+    "time": "HH:mm"
+  },
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "filter": "تصفية",
+    "yes": "نعم",
+    "no": "لا",
+    "confirm": "تأكيد",
+    "success": "نجاح",
+    "error": "خطأ",
+    "warning": "تحذير",
+    "info": "معلومات"
+  }
+}

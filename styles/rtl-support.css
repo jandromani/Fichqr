@@ -1,0 +1,61 @@
+/* Soporte para idiomas RTL */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Invertir iconos en modo RTL */
+.rtl .icon-flip-rtl {
+  transform: scaleX(-1);
+}
+
+/* Ajustar márgenes en modo RTL */
+.rtl .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.rtl .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+.rtl .pl-2 {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+.rtl .pr-2 {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+/* Ajustar bordes en modo RTL */
+.rtl .border-l {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+.rtl .border-r {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* Ajustar alineación de texto en modo RTL */
+.rtl .text-left {
+  text-align: right;
+}
+
+.rtl .text-right {
+  text-align: left;
+}
+
+/* Ajustar flexbox en modo RTL */
+.rtl .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* Ajustar grid en modo RTL */
+.rtl .grid {
+  direction: rtl;
+}

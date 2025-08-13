@@ -1,0 +1,594 @@
+/* Estilos para componentes relacionados con QR */
+
+/* Contenedor principal de la sección de QR */
+.qr-management-section {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs de navegación */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4a5568;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: #3182ce;
+}
+
+.tab-btn.active {
+  color: #3182ce;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3182ce;
+}
+
+/* Contenido de las tabs */
+.tab-content {
+  padding: 1rem 0;
+}
+
+/* Selector de posición */
+.position-selector {
+  margin-bottom: 1.5rem;
+}
+
+.position-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.select-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+/* Generador de QR */
+.enhanced-qr-generator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.qr-preview-container {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-preview {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.qr-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #718096;
+}
+
+.qr-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.qr-options {
+  flex: 1;
+  min-width: 250px;
+}
+
+.option-group {
+  margin-bottom: 1rem;
+}
+
+.option-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.color-input {
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.toggle-advanced {
+  margin: 1rem 0;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: #3182ce;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.text-btn:hover {
+  text-decoration: underline;
+}
+
+.qr-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.qr-info h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Editor de plantillas */
+.qr-template-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.editor-header {
+  margin-bottom: 1rem;
+}
+
+.editor-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.template-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.template-preview {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.preview-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #718096;
+}
+
+.preview-info {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.color-preview {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.text-area {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Gestor de puestos temporales */
+.temporary-position-manager {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.positions-list {
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.positions-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.positions-list th,
+.positions-list td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.positions-list th {
+  background-color: #f7fafc;
+  font-weight: 600;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: #718096;
+  background-color: #f7fafc;
+  border-radius: 4px;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-small {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.qr-small:hover {
+  transform: scale(1.1);
+}
+
+.qr-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.qr-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.qr-large {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-url {
+  margin: 1rem 0;
+  word-break: break-all;
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.qr-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.temporary-position-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 8px;
+}
+
+.temporary-position-info h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.temporary-position-info ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.info-box.warning {
+  background-color: #fff8e1;
+  border-left: 4px solid #f39c12;
+}
+
+.info-box h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #f39c12;
+}
+
+/* Escáner de QR */
+.qr-scanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scanner-container {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.scanner-video {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scanner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.scanner-target {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.scanner-target::before,
+.scanner-target::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: #3182ce;
+  border-style: solid;
+}
+
+.scanner-target::before {
+  top: -2px;
+  left: -2px;
+  border-width: 2px 0 0 2px;
+}
+
+.scanner-target::after {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 2px 2px 0;
+}
+
+.scanner-info {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.scanner-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.scan-result {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.result-box {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.result-box.valid {
+  background-color: #f0fff4;
+  border-left: 4px solid #48bb78;
+}
+
+.result-box.invalid {
+  background-color: #fff5f5;
+  border-left: 4px solid #f56565;
+}
+
+/* Estilos para botones y acciones */
+.action-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.action-btn.primary {
+  background-color: #3182ce;
+  color: #fff;
+}
+
+.action-btn.primary:hover {
+  background-color: #2c5282;
+}
+
+.action-btn.secondary {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.action-btn.secondary:hover {
+  background-color: #cbd5e0;
+}
+
+.action-btn.danger {
+  background-color: #f56565;
+  color: #fff;
+}
+
+.action-btn.danger:hover {
+  background-color: #c53030;
+}
+
+.action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.action-btn.small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Estilos para formularios */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.input-error {
+  border-color: #f56565;
+}
+
+.error-message {
+  color: #f56565;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .enhanced-qr-generator,
+  .editor-content {
+    flex-direction: column;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .qr-modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+}

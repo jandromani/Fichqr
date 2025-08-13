@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "उपस्थिति प्रणाली",
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई है"
+  },
+  "auth": {
+    "login": "लॉग इन करें",
+    "register": "पंजीकरण करें",
+    "logout": "लॉग आउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "name": "पूरा नाम",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "quickAccess": "त्वरित पहुंच",
+    "admin": "व्यवस्थापक",
+    "employer": "नियोक्ता",
+    "worker": "कर्मचारी"
+  },
+  "navigation": {
+    "workers": "कर्मचारी",
+    "positions": "पद",
+    "calendar": "कैलेंडर",
+    "reports": "रिपोर्ट",
+    "vacations": "अवकाश",
+    "qrCodes": "क्यूआर कोड",
+    "config": "सेटिंग्स"
+  },
+  "languages": {
+    "es": "स्पेनिश",
+    "en": "अंग्रेज़ी",
+    "hi": "हिंदी",
+    "ur": "उर्दू",
+    "ar": "अरबी",
+    "sw": "स्वाहिली",
+    "ha": "हौसा"
+  },
+  "dateFormats": {
+    "short": "DD/MM/YYYY",
+    "long": "D MMMM, YYYY",
+    "time": "HH:mm"
+  },
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "add": "जोड़ें",
+    "search": "खोजें",
+    "filter": "फ़िल्टर",
+    "yes": "हां",
+    "no": "नहीं",
+    "confirm": "पुष्टि करें",
+    "success": "सफलता",
+    "error": "त्रुटि",
+    "warning": "चेतावनी",
+    "info": "जानकारी"
+  }
+}
